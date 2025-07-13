@@ -29,7 +29,7 @@ import java.net.ConnectException
 import scala.scalanative.annotation.alwaysinline
 import scala.scalanative.libc.errno._
 import scala.scalanative.posix.fcntl._
-import scala.scalanative.posix.errno._
+import scala.scalanative.posix.errno.{EAGAIN, EWOULDBLOCK, EADDRINUSE, ECONNREFUSED}
 import scala.scalanative.posix.string._
 import scala.scalanative.unsafe._
 

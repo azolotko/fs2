@@ -85,7 +85,7 @@ sealed trait TLSParameters {
               s2n_connection_set_verify_host_callback(
                 conn,
                 s2nVerifyHostFn(_, _, _),
-                toPtr(cb)
+                s2nutil.toPtr(cb)
               )
             )
           }
